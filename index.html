@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kensington Financial Services, Inc. | Your Choice for Financial Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="prog"></div>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav-logo">
+    <img src="logo.png" alt="Kensington Financial Services, Inc." style="height:48px;width:auto;display:block">
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="clients.html">Clients</a></li>
+    <li><a href="about.html">About</a></li>
+    <li class="has-drop">
+      <a href="resources.html">Resources &#9662;</a>
+      <ul class="drop">
+        <li><a href="resources.html">Lifestyle</a></li>
+        <li><a href="resources.html">Investment</a></li>
+        <li><a href="resources.html">Retirement</a></li>
+        <li><a href="resources.html">Kensington Insurance</a></li>
+        <li><a href="resources.html">Financial Behavior</a></li>
+        <li><a href="resources.html">Estate</a></li>
+        <li><a href="resources.html">Taxes</a></li>
+      </ul>
+    </li>
+    <li class="has-drop">
+      <a href="#">Tools &#9662;</a>
+      <ul class="drop">
+        <li><a href="#">Calculators</a></li>
+        <li><a href="#">Glossary</a></li>
+        <li><a href="#">Tax Resources</a></li>
+      </ul>
+    </li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Schedule an Appointment</a>
+  <button class="hamburger" id="hbg" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mob-menu" id="mob">
+  <a href="index.html" onclick="closeMob()">Home</a>
+  <a href="clients.html" onclick="closeMob()">Clients</a>
+  <a href="about.html" onclick="closeMob()">About</a>
+  <a href="resources.html" onclick="closeMob()">Resources</a>
+  <a href="contact.html" onclick="closeMob()">Contact</a>
+  <a href="contact.html" onclick="closeMob()" class="btn-gold" style="margin-top:8px">Schedule an Appointment</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-geo" id="hgeo"><div class="hero-geo-core"></div></div>
+  <div class="hero-content">
+    <h1 class="hero-h1">Kensington Financial<br><em>Services, Inc.</em></h1>
+    <div class="hero-rule"></div>
+    <p class="hero-sub">Your choice for Financial Services</p>
+    <div class="hero-btns">
+      <a href="contact.html" class="btn-gold">Schedule an Appointment <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M1 7H13M7 1L13 7L7 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="about.html" class="btn-ghost">Discover Our Story</a>
+    </div>
+  </div>
+  <div class="hero-scroll-indicator"><span>Scroll</span><div class="scroll-line"></div></div>
+</section>
+
+<!-- ABOUT SPLIT -->
+<section class="about-split" id="about">
+  <div class="about-split-left a">
+    <h2 class="about-split-h2">Where do you want to go? We'll get there, together.</h2>
+    <p class="about-split-body">Kensington Financial Services, Inc. started in 1987 with a focus on taking control of your financial future. Our goal is to tailor our program and service to the diverse needs of our clients which allow them to enjoy life. At Kensington Financial Services, Inc. our mission is to understand your concerns and needs to build a sensible plan for your goals.</p>
+    <p class="about-split-body">We have a passion building lifelong relationships. Welcome to Kensington Financial Services, Inc.</p>
+    <p class="about-split-disclaimer">This communication is strictly intended for individuals residing in the states of AZ, CA, CO, CT, DC, FL, GA, HI, IA, ID, IL, IN, KS, MA, MI, MN, MO, NC, NH, NJ, NV, NY, OR, PA, TN, VA, &amp; WI. No offers may be made or accepted from any resident outside the specific state(s) referenced.</p>
+    <a href="contact.html" class="about-split-btn">Schedule an Appointment</a>
+  </div>
+  <div class="about-split-right">
+    <div class="tl-wrap">
+
+      <!-- Background glow -->
+      <div class="tl-glow"></div>
+
+      <!-- Main SVG: arc timeline 1987 → 2026 -->
+      <svg class="tl-svg" viewBox="0 0 420 380" fill="none">
+        <defs>
+          <linearGradient id="arcGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="rgba(199,219,216,.15)"/>
+            <stop offset="100%" stop-color="rgba(199,219,216,.85)"/>
+          </linearGradient>
+          <linearGradient id="lineGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#015850"/>
+            <stop offset="100%" stop-color="#C7DBD8"/>
+          </linearGradient>
+          <filter id="glow">
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+
+        <!-- Track arc (full, faint) -->
+        <path d="M 60 320 Q 210 60 360 320" stroke="rgba(199,219,216,.1)" stroke-width="2" fill="none"/>
+
+        <!-- Animated progress arc -->
+        <path d="M 60 320 Q 210 60 360 320" stroke="url(#arcGrad)" stroke-width="2.5"
+          fill="none" stroke-linecap="round"
+          stroke-dasharray="550" stroke-dashoffset="550"
+          class="tl-arc-path"/>
+
+        <!-- Growth curve (rising line from bottom-left to top-right) -->
+        <path d="M 60 310 C 110 290 150 240 185 200 S 260 140 300 100 S 345 70 370 55"
+          stroke="url(#lineGrad)" stroke-width="2" fill="none" stroke-linecap="round"
+          stroke-dasharray="400" stroke-dashoffset="400"
+          class="tl-growth-path"/>
+
+        <!-- Gradient fill under growth curve -->
+        <path d="M 60 310 C 110 290 150 240 185 200 S 260 140 300 100 S 345 70 370 55 L 370 330 L 60 330 Z"
+          fill="rgba(199,219,216,.05)" class="tl-fill"/>
+
+        <!-- Milestone dots on arc -->
+        <circle cx="60"  cy="320" r="6" fill="#015850" stroke="#C7DBD8" stroke-width="2" class="tl-dot" style="--dd:0.3s" filter="url(#glow)"/>
+        <circle cx="135" cy="148" r="5" fill="#015850" stroke="#C7DBD8" stroke-width="1.5" class="tl-dot" style="--dd:0.9s"/>
+        <circle cx="210" cy="80"  r="5" fill="#015850" stroke="#C7DBD8" stroke-width="1.5" class="tl-dot" style="--dd:1.4s"/>
+        <circle cx="285" cy="148" r="5" fill="#015850" stroke="#C7DBD8" stroke-width="1.5" class="tl-dot" style="--dd:1.9s"/>
+        <circle cx="360" cy="320" r="6" fill="#C7DBD8" stroke="#fff" stroke-width="2" class="tl-dot" style="--dd:2.4s" filter="url(#glow)"/>
+
+        <!-- Milestone year labels -->
+        <text x="44"  y="348" font-family="Poppins,sans-serif" font-size="11" font-weight="600" fill="#C7DBD8" class="tl-label" style="--dd:0.5s">1987</text>
+        <text x="115" y="136" font-family="Inter,sans-serif"   font-size="9"  fill="rgba(199,219,216,.6)" class="tl-label" style="--dd:1.1s">2000</text>
+        <text x="196" y="68"  font-family="Inter,sans-serif"   font-size="9"  fill="rgba(199,219,216,.6)" class="tl-label" style="--dd:1.6s">2010</text>
+        <text x="270" y="136" font-family="Inter,sans-serif"   font-size="9"  fill="rgba(199,219,216,.6)" class="tl-label" style="--dd:2.1s">2020</text>
+        <text x="344" y="348" font-family="Poppins,sans-serif" font-size="11" font-weight="600" fill="#C7DBD8" class="tl-label" style="--dd:2.6s">2026</text>
+
+        <!-- Arrow head at end of growth line -->
+        <polygon points="370,55 360,66 376,66" fill="#C7DBD8" class="tl-arrow"/>
+      </svg>
+
+      <!-- Center headline card -->
+      <div class="tl-center">
+        <div class="tl-years-num">38</div>
+        <div class="tl-years-label">Years of<br>Financial Expertise</div>
+      </div>
+
+      <!-- Bottom tagline -->
+      <div class="tl-tagline">Taking Control of Your Financial Future</div>
+
+      <!-- Floating stat chips -->
+      <div class="tl-chip tl-chip-a">Est. 1987</div>
+      <div class="tl-chip tl-chip-b">29 States</div>
+    </div>
+  </div>
+</section>
+
+<!-- PILLARS -->
+<section class="pillars" id="services">
+  <div class="pillars-head">
+    <h2 class="pillars-title a">How We<br><em>Work With You</em></h2>
+    <p class="pillars-desc a d2">We create strategies tailored to your unique goals and circumstances, guiding you through every stage of life.</p>
+  </div>
+  <div class="pw-grid">
+
+    <!-- 01 Your Process -->
+    <a href="process.html" class="pw-card a d1">
+      <div class="pw-bg" style="background-image:url('process-bg.jpg')"></div>
+      <div class="pw-overlay"></div>
+      <span class="pw-num">01</span>
+      <div class="pw-bottom">
+        <h3 class="pw-title">Your Process</h3>
+        <p class="pw-text">We create strategies tailored to your goals.</p>
+        <span class="pw-link">Learn more <span class="pw-arrow">&rarr;</span></span>
+      </div>
+    </a>
+
+    <!-- 02 Our History -->
+    <a href="about.html" class="pw-card a d2">
+      <div class="pw-bg" style="background-image:url('history-bg.jpg')"></div>
+      <div class="pw-overlay"></div>
+      <span class="pw-num">02</span>
+      <div class="pw-bottom">
+        <h3 class="pw-title">Our History</h3>
+        <p class="pw-text">We're prepared to guide you through life's transitions.</p>
+        <span class="pw-link">Learn more <span class="pw-arrow">&rarr;</span></span>
+      </div>
+    </a>
+
+    <!-- 03 Shared Values -->
+    <a href="about.html" class="pw-card a d3">
+      <div class="pw-bg" style="background-image:url('values-bg.jpg')"></div>
+      <div class="pw-overlay"></div>
+      <span class="pw-num">03</span>
+      <div class="pw-bottom">
+        <h3 class="pw-title">Shared Values</h3>
+        <p class="pw-text">We operate our business with ethics and integrity.</p>
+        <span class="pw-link">Learn more <span class="pw-arrow">&rarr;</span></span>
+      </div>
+    </a>
+
+    <!-- 04 Resources -->
+    <a href="resources.html" class="pw-card a d4">
+      <div class="pw-bg" style="background-image:url('resources-bg.jpg')"></div>
+      <div class="pw-overlay"></div>
+      <span class="pw-num">04</span>
+      <div class="pw-bottom">
+        <h3 class="pw-title">Resources</h3>
+        <p class="pw-text">Let's talk about your investment strategies.</p>
+        <span class="pw-link">Learn more <span class="pw-arrow">&rarr;</span></span>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<!-- QUOTE -->
+<section class="quote">
+  <div class="quote-inner">
+    <div class="quote-rule a"></div>
+    <blockquote class="quote-text a d1">"An investment in knowledge pays the best interest."</blockquote>
+    <p class="quote-by a d2">&mdash; Benjamin Franklin</p>
+  </div>
+</section>
+
+<!-- ABOUT: FAMILY -->
+<section class="split">
+  <div class="split-inner">
+    <div class="split-visual a">
+      <div class="split-photo" style="background-image:url('family-bg.jpg')"></div>
+      <div class="split-accent" style="background:var(--gold)"></div>
+      <div class="split-accent2"></div>
+    </div>
+    <div class="split-content">
+      <div class="section-label a d1">Welcome to the Family</div>
+      <h2 class="split-h2 a d2">You're part of<br>the <em>family.</em></h2>
+      <p class="split-body a d3">When you work with Kensington Financial Services, Inc., you're part of the family. Our team of professionals has years of experience in financial services. We can help you address your needs today and for many years to come.</p>
+      <a href="team.html" class="split-link a d4">Meet our team &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT: GOALS -->
+<section class="split">
+  <div class="split-inner rev">
+    <div class="split-visual a">
+      <div class="split-photo" style="background-image:url('goals-bg.jpg')"></div>
+      <div class="split-accent" style="top:auto;right:auto;bottom:-18px;left:-18px;background:var(--navy)"></div>
+      <div class="split-accent2" style="bottom:auto;left:auto;top:-14px;right:-14px"></div>
+    </div>
+    <div class="split-content">
+      <div class="section-label a d1">Our Commitment</div>
+      <h2 class="split-h2 a d2">Your goals are<br><em>our goals.</em></h2>
+      <p class="split-body a d3">Our team works hand-in-hand with you, always acting in your best interest, with all your goals and dreams firmly in mind.</p>
+      <a href="contact.html" class="split-link a d4">Start the conversation &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT: JOURNEY -->
+<section class="split">
+  <div class="split-inner">
+    <div class="split-visual a">
+      <div class="split-photo" style="background-image:url('journey-bg.jpg');background-position:center center"></div>
+      <div class="split-accent" style="background:var(--gold);opacity:.1"></div>
+      <div class="split-accent2"></div>
+    </div>
+    <div class="split-content">
+      <div class="section-label a d1">The Journey</div>
+      <h2 class="split-h2 a d2">We go with you,<br>wherever the <em>road</em><br>of life takes you.</h2>
+      <p class="split-body a d3">We'll work with you to explore the choices you may have already heard about and determine which ones fit your individual strategy.</p>
+      <a href="contact.html" class="split-link a d4">Schedule an appointment &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="team" id="team">
+  <div class="team-intro">
+    <div>
+      <div class="section-label a">Our People</div>
+      <h2 class="team-h2 a d1">Meet Our<br><em>Team</em></h2>
+    </div>
+    <div>
+      <p class="team-intro-body a d2">Our reasons for becoming financial professionals are deeply personal. We repeatedly saw many friends and family struggling to find the help they needed to map out their financial future. We are confident that with our understanding of personal finance, coupled with our training as financial professionals, we can help people better prepare for the future.</p>
+      <p class="team-intro-body a d3" style="margin-top:14px">After years in the business, we have developed a reputation for educating individuals in an easy-to-understand manner so they can grasp personal finance and use those concepts to pursue their financial objectives. We feel a commitment to our community. Our team approach adds perspective to all we do and provides increased benefits to our clients.</p>
+    </div>
+  </div>
+  <div class="tm-grid">
+
+    <div class="tm-card a d1">
+      <div class="tm-photo" style="background-image:url('team-kurt.jpg')"></div>
+      <div class="tm-overlay"></div>
+      <div class="tm-body">
+        <div class="tm-name">Kurt Reif</div>
+        <div class="tm-role">President</div>
+        <div class="tm-contacts">
+          <a href="tel:8472550300">(847) 255-0300 ext. 24</a>
+          <a href="mailto:kreif@kfsiadvisor.com">kreif@kfsiadvisor.com</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tm-card a d2">
+      <div class="tm-photo" style="background-image:url('team-kurt2.jpg')"></div>
+      <div class="tm-overlay"></div>
+      <div class="tm-body">
+        <div class="tm-name">Kurt Reif, CFP&reg;</div>
+        <div class="tm-role">Vice President</div>
+        <div class="tm-contacts">
+          <a href="tel:8472552534">(847) 255-2534</a>
+          <a href="mailto:kurt@kfsiadvisor.com">kurt@kfsiadvisor.com</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tm-card a d3">
+      <div class="tm-photo" style="background-image:url('team-terry.jpg')"></div>
+      <div class="tm-overlay"></div>
+      <div class="tm-body">
+        <div class="tm-name">Terry Ruff</div>
+        <div class="tm-role">Senior Vice President</div>
+        <div class="tm-contacts">
+          <a href="tel:8472550301">(847) 255-0301</a>
+          <a href="mailto:truff@kfsiadvisor.com">truff@kfsiadvisor.com</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tm-card a d1">
+      <div class="tm-photo" style="background-image:url('team-dennis.jpg')"></div>
+      <div class="tm-overlay"></div>
+      <div class="tm-body">
+        <div class="tm-name">Dennis Chorney</div>
+        <div class="tm-role">Vice President</div>
+        <div class="tm-contacts">
+          <a href="tel:8472552122">(847) 255-2122</a>
+          <a href="mailto:dchorney@kfsiadvisor.com">dchorney@kfsiadvisor.com</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tm-card a d2">
+      <div class="tm-photo" style="background-image:url('team-nicole.jpg')"></div>
+      <div class="tm-overlay"></div>
+      <div class="tm-body">
+        <div class="tm-name">Nicole Calow</div>
+        <div class="tm-role">Vice President</div>
+        <div class="tm-contacts">
+          <a href="tel:8472550302">(847) 255-0302</a>
+          <a href="mailto:ncalow@kfsiadvisor.com">ncalow@kfsiadvisor.com</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tm-card a d3">
+      <div class="tm-photo" style="background-image:url('team-elvira.jpg')"></div>
+      <div class="tm-overlay"></div>
+      <div class="tm-body">
+        <div class="tm-name">Elvira Kunica</div>
+        <div class="tm-role">Administrative Assistant</div>
+        <div class="tm-contacts">
+          <a href="tel:8478077016">847-807-7016</a>
+          <a href="mailto:ekunica@kfsiadvisor.com">ekunica@kfsiadvisor.com</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- RESOURCES -->
+<section class="resources" id="resources" style="display:none">
+  <div class="res-head">
+    <div>
+      <div class="section-label a" style="color:var(--navy)"><span style="display:inline-block;width:28px;height:1px;background:var(--navy);margin-right:12px;vertical-align:middle"></span>Knowledge Hub</div>
+      <h2 class="res-h2 a d1">Resources &amp;<br><em>Insights</em></h2>
+    </div>
+    <div class="res-cats a d2">
+      <button class="cat on">All</button>
+      <button class="cat">Lifestyle</button>
+      <button class="cat">Investment</button>
+      <button class="cat">Retirement</button>
+      <button class="cat">Estate</button>
+      <button class="cat">Taxes</button>
+    </div>
+  </div>
+  <div class="res-grid">
+    <div class="res-feat a">
+      <div class="res-feat-bg"></div>
+      <div class="res-feat-orb"></div>
+      <div class="res-feat-content">
+        <div class="res-tag">Investment Strategies</div>
+        <h3 class="res-feat-title">Let's talk about your investment strategies.</h3>
+        <p class="res-feat-desc">Explore our comprehensive library of financial resources designed to help you make informed decisions about your financial future.</p>
+        <a href="resources.html" class="res-link">Explore Resources &rarr;</a>
+      </div>
+    </div>
+    <div class="res-card a d1">
+      <div>
+        <div class="res-tag">Retirement</div>
+        <h4 class="res-card-title">Planning for Retirement</h4>
+        <p class="res-card-body">Comprehensive strategies to help you prepare for life's most important financial milestone.</p>
+      </div>
+      <a href="resources.html" class="res-link" style="color:var(--navy)">Read More &rarr;</a>
+    </div>
+    <div class="res-card a d2">
+      <div>
+        <div class="res-tag">Lifestyle</div>
+        <h4 class="res-card-title">Financial Wellness &amp; Lifestyle</h4>
+        <p class="res-card-body">Insights into how financial planning supports the life you want to live today and tomorrow.</p>
+      </div>
+      <a href="resources.html" class="res-link" style="color:var(--navy)">Read More &rarr;</a>
+    </div>
+  </div>
+  <div class="res-cats-mini">
+    <div class="res-mini a d1">
+      <div><div class="res-tag">Insurance</div><div class="res-mini-title">Kensington Insurance</div></div>
+      <a href="resources.html" class="res-link" style="color:var(--navy);font-size:.65rem">Explore &rarr;</a>
+    </div>
+    <div class="res-mini a d2">
+      <div><div class="res-tag">Behavior</div><div class="res-mini-title">Financial Behavior</div></div>
+      <a href="resources.html" class="res-link" style="color:var(--navy);font-size:.65rem">Explore &rarr;</a>
+    </div>
+    <div class="res-mini a d3">
+      <div><div class="res-tag">Estate</div><div class="res-mini-title">Estate Planning</div></div>
+      <a href="resources.html" class="res-link" style="color:var(--navy);font-size:.65rem">Explore &rarr;</a>
+    </div>
+    <div class="res-mini a d4">
+      <div><div class="res-tag">Taxes</div><div class="res-mini-title">Tax Resources</div></div>
+      <a href="resources.html" class="res-link" style="color:var(--navy);font-size:.65rem">Explore &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="contact-l">
+    <div class="contact-l-content">
+      <div class="section-label a" style="color:var(--gold)"><span style="display:inline-block;width:28px;height:1px;background:var(--gold);opacity:.6;margin-right:12px;vertical-align:middle"></span>Get In Touch</div>
+      <h2 class="contact-h2 a d1">Let's start<br>the <em>conversation.</em></h2>
+      <div class="contact-details a d2">
+        <div>
+          <div class="cd-label">Office</div>
+          <div class="cd-val"><a href="tel:8472550300">(847) 255-0300</a></div>
+        </div>
+        <div>
+          <div class="cd-label">Fax</div>
+          <div class="cd-val">(847) 577-6198</div>
+        </div>
+        <div>
+          <div class="cd-label">Email</div>
+          <div class="cd-val"><a href="mailto:truff@kfsiadvisor.com">truff@kfsiadvisor.com</a></div>
+        </div>
+        <div>
+          <div class="cd-label">Address</div>
+          <div class="cd-val">3135 North Wilke Road, Suite A<br>Arlington Heights, IL 60004</div>
+        </div>
+      </div>
+      <div class="contact-hours a d3">
+        <div class="cd-label">Hours of Operation</div>
+        <div class="cd-val" style="font-size:.92rem;margin-top:8px;line-height:1.85">
+          Monday&ndash;Friday: 8:00 AM &ndash; 5:00 PM<br>
+          Saturday&ndash;Sunday: By Appointment
+        </div>
+      </div>
+    </div>
+    <div class="contact-geo"></div>
+  </div>
+  <div class="contact-r">
+    <div class="section-label a" style="color:var(--gold)">Have A Question?</div>
+    <h3 class="contact-r-h3 a d1">Send Us a Message</h3>
+    <p class="contact-r-sub a d2">We'll respond within one business day.</p>
+    <form id="cform" class="a d3">
+      <div class="frow">
+        <div class="fg"><label>Name</label><input type="text" class="fi" placeholder="Your full name"></div>
+        <div class="fg"><label>Email Address</label><input type="email" class="fi" placeholder="your@email.com"></div>
+      </div>
+      <div class="fg"><label>Phone</label><input type="tel" class="fi" placeholder="(000) 000-0000"></div>
+      <div class="fg"><label>Question</label><textarea class="fi ta" placeholder="How can we help you?"></textarea></div>
+      <button type="submit" class="fsub">Send Message <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M1 7H13M7 1L13 7L7 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-main">
+    <div>
+      <div class="footer-logo"><img src="logo.png" alt="Kensington Financial Services, Inc." class="footer-logo-img"></div>
+      <p class="footer-tag">"Your choice for Financial Services"</p>
+      <div class="footer-mini">
+        <a href="tel:8472550300">(847) 255-0300</a>
+        <a href="mailto:truff@kfsiadvisor.com">truff@kfsiadvisor.com</a>
+        <a href="#">3135 N. Wilke Rd., Suite A, Arlington Heights, IL 60004</a>
+      </div>
+    </div>
+    <div class="footer-cols">
+      <div>
+        <div class="fc-title">Resources</div>
+        <ul class="fc-links">
+          <li><a href="resources.html">Retirement</a></li>
+          <li><a href="resources.html">Investment</a></li>
+          <li><a href="resources.html">Estate</a></li>
+          <li><a href="resources.html">Insurance</a></li>
+          <li><a href="resources.html">Taxes</a></li>
+          <li><a href="resources.html">Financial Behavior</a></li>
+          <li><a href="resources.html">Lifestyle</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="fc-title">Tools</div>
+        <ul class="fc-links">
+          <li><a href="#">All Calculators</a></li>
+          <li><a href="#">Glossary</a></li>
+          <li><a href="#">Tax Resources</a></li>
+          <li><a href="#">Latest Articles</a></li>
+          <li><a href="#">All Videos</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="fc-title">Company</div>
+        <ul class="fc-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="clients.html">Clients</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Osaic</a></li>
+          <li><a href="#">Form CRS</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <hr class="footer-hr">
+  <div class="footer-bottom">
+    <div class="footer-disc">
+      <p>The content is developed from sources believed to be providing accurate information. The information in this material is not intended as tax or legal advice. Please consult legal or tax professionals for specific information regarding your individual situation. Some of this material was developed and produced by FMG Suite to provide information on a topic that may be of interest. FMG Suite is not affiliated with the named representative, broker - dealer, state - or SEC - registered investment advisory firm. The opinions expressed and material provided are for general information, and should not be considered a solicitation for the purchase or sale of any security.</p>
+      <p>We take protecting your data and privacy very seriously. As of January 1, 2020 the California Consumer Privacy Act (CCPA) suggests the following link as an extra measure to safeguard your data: <a href="#">Do not sell my personal information</a>.</p>
+      <p>Securities and investment advisory services are offered through Osaic Wealth, Inc., member <a href="#">FINRA</a>/<a href="#">SIPC</a>. Osaic Wealth is separately owned, and other entities and/or marketing names, products, or services referenced here are independent of Osaic Wealth. <a href="#">Osaic Wealth's Form CRS</a></p>
+      <p>This communication is strictly intended for individuals residing in the states of AZ, CA, CO, CT, DC, FL, GA, HI, IA, ID, IL, IN, KS, MA, MI, MN, MO, MS, NC, NH, NJ, NV, NY, OR, PA, TN, VA, &amp; WI. No offers may be made or accepted from any resident outside the specific state(s) referenced.</p>
+      <p>Check the background of your financial professional on FINRA's <a href="#">BrokerCheck</a>.</p>
+    </div>
+    <div class="footer-legal">
+      <div class="footer-cr">Copyright 2026 FMG Suite.</div>
+      <div class="footer-legal-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">BrokerCheck</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
