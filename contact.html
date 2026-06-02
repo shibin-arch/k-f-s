@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Kensington Financial Services, Inc.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="inner">
+
+<div id="prog"></div>
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav-logo">
+    <img src="logo.png" alt="Kensington Financial Services, Inc." style="height:48px;width:auto;display:block">
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="clients.html">Clients</a></li>
+    <li><a href="about.html">About</a></li>
+    <li class="has-drop">
+      <a href="resources.html">Resources &#9662;</a>
+      <ul class="drop">
+        <li><a href="resources.html">Lifestyle</a></li>
+        <li><a href="resources.html">Investment</a></li>
+        <li><a href="resources.html">Retirement</a></li>
+        <li><a href="resources.html">Kensington Insurance</a></li>
+        <li><a href="resources.html">Financial Behavior</a></li>
+        <li><a href="resources.html">Estate</a></li>
+        <li><a href="resources.html">Taxes</a></li>
+      </ul>
+    </li>
+    <li class="has-drop">
+      <a href="#">Tools &#9662;</a>
+      <ul class="drop">
+        <li><a href="#">Calculators</a></li>
+        <li><a href="#">Glossary</a></li>
+        <li><a href="#">Tax Resources</a></li>
+      </ul>
+    </li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Schedule an Appointment</a>
+  <button class="hamburger" id="hbg" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mob-menu" id="mob">
+  <a href="index.html" onclick="closeMob()">Home</a>
+  <a href="clients.html" onclick="closeMob()">Clients</a>
+  <a href="about.html" onclick="closeMob()">About</a>
+  <a href="resources.html" onclick="closeMob()">Resources</a>
+  <a href="contact.html" onclick="closeMob()">Contact</a>
+  <a href="contact.html" onclick="closeMob()" class="btn-gold" style="margin-top:8px">Schedule an Appointment</a>
+</div>
+
+<!-- CONTACT SPLIT — no page banner, goes straight into the contact section with nav padding -->
+<section class="contact" style="padding-top:80px;min-height:100vh">
+  <div class="contact-l">
+    <div class="contact-l-content">
+      <div class="section-label a" style="color:var(--gold)"><span style="display:inline-block;width:28px;height:1px;background:var(--gold);opacity:.6;margin-right:12px;vertical-align:middle"></span>Get In Touch</div>
+      <h2 class="contact-h2 a d1">Let's start<br>the <em>conversation.</em></h2>
+      <div class="contact-details a d2">
+        <div>
+          <div class="cd-label">Office</div>
+          <div class="cd-val"><a href="tel:8472550300">(847) 255-0300</a></div>
+        </div>
+        <div>
+          <div class="cd-label">Fax</div>
+          <div class="cd-val">(847) 577-6198</div>
+        </div>
+        <div>
+          <div class="cd-label">Email</div>
+          <div class="cd-val"><a href="mailto:truff@kfsiadvisor.com">truff@kfsiadvisor.com</a></div>
+        </div>
+        <div>
+          <div class="cd-label">Address</div>
+          <div class="cd-val">3135 North Wilke Road, Suite A<br>Arlington Heights, IL 60004</div>
+        </div>
+      </div>
+      <div class="contact-hours a d3">
+        <div class="cd-label">Hours of Operation</div>
+        <div class="cd-val" style="font-size:.92rem;margin-top:8px;line-height:1.85">
+          Monday&ndash;Friday: 8:00 AM &ndash; 5:00 PM<br>
+          Saturday&ndash;Sunday: By Appointment
+        </div>
+      </div>
+    </div>
+    <div class="contact-geo"></div>
+  </div>
+  <div class="contact-r">
+    <div class="section-label a" style="color:var(--gold)">Have A Question?</div>
+    <h3 class="contact-r-h3 a d1">Send Us a Message</h3>
+    <p class="contact-r-sub a d2">We'll respond within one business day.</p>
+    <form id="cform" class="a d3">
+      <div class="frow">
+        <div class="fg"><label>Name</label><input type="text" class="fi" placeholder="Your full name"></div>
+        <div class="fg"><label>Email Address</label><input type="email" class="fi" placeholder="your@email.com"></div>
+      </div>
+      <div class="fg"><label>Phone</label><input type="tel" class="fi" placeholder="(000) 000-0000"></div>
+      <div class="fg"><label>Question</label><textarea class="fi ta" placeholder="How can we help you?"></textarea></div>
+      <button type="submit" class="fsub">Send Message <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M1 7H13M7 1L13 7L7 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-main">
+    <div>
+      <div class="footer-logo">Kensington Financial<br>Services, Inc.<span>Est. 1987 &middot; Arlington Heights, IL</span></div>
+      <p class="footer-tag">"Your choice for Financial Services"</p>
+      <div class="footer-mini">
+        <a href="tel:8472550300">(847) 255-0300</a>
+        <a href="mailto:truff@kfsiadvisor.com">truff@kfsiadvisor.com</a>
+        <a href="#">3135 N. Wilke Rd., Suite A, Arlington Heights, IL 60004</a>
+      </div>
+    </div>
+    <div class="footer-cols">
+      <div>
+        <div class="fc-title">Resources</div>
+        <ul class="fc-links">
+          <li><a href="resources.html">Retirement</a></li>
+          <li><a href="resources.html">Investment</a></li>
+          <li><a href="resources.html">Estate</a></li>
+          <li><a href="resources.html">Insurance</a></li>
+          <li><a href="resources.html">Taxes</a></li>
+          <li><a href="resources.html">Financial Behavior</a></li>
+          <li><a href="resources.html">Lifestyle</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="fc-title">Tools</div>
+        <ul class="fc-links">
+          <li><a href="#">All Calculators</a></li>
+          <li><a href="#">Glossary</a></li>
+          <li><a href="#">Tax Resources</a></li>
+          <li><a href="#">Latest Articles</a></li>
+          <li><a href="#">All Videos</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="fc-title">Company</div>
+        <ul class="fc-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="clients.html">Clients</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Osaic</a></li>
+          <li><a href="#">Form CRS</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <hr class="footer-hr">
+  <div class="footer-bottom">
+    <div class="footer-disc">
+      <p>The content is developed from sources believed to be providing accurate information. The information in this material is not intended as tax or legal advice. Please consult legal or tax professionals for specific information regarding your individual situation. Some of this material was developed and produced by FMG Suite to provide information on a topic that may be of interest. FMG Suite is not affiliated with the named representative, broker - dealer, state - or SEC - registered investment advisory firm. The opinions expressed and material provided are for general information, and should not be considered a solicitation for the purchase or sale of any security.</p>
+      <p>We take protecting your data and privacy very seriously. As of January 1, 2020 the California Consumer Privacy Act (CCPA) suggests the following link as an extra measure to safeguard your data: <a href="#">Do not sell my personal information</a>.</p>
+      <p>Securities and investment advisory services are offered through Osaic Wealth, Inc., member <a href="#">FINRA</a>/<a href="#">SIPC</a>. Osaic Wealth is separately owned, and other entities and/or marketing names, products, or services referenced here are independent of Osaic Wealth. <a href="#">Osaic Wealth's Form CRS</a></p>
+      <p>This communication is strictly intended for individuals residing in the states of AZ, CA, CO, CT, DC, FL, GA, HI, IA, ID, IL, IN, KS, MA, MI, MN, MO, MS, NC, NH, NJ, NV, NY, OR, PA, TN, VA, &amp; WI. No offers may be made or accepted from any resident outside the specific state(s) referenced.</p>
+      <p>Check the background of your financial professional on FINRA's <a href="#">BrokerCheck</a>.</p>
+    </div>
+    <div class="footer-legal">
+      <div class="footer-cr">Copyright 2026 FMG Suite.</div>
+      <div class="footer-legal-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">BrokerCheck</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
